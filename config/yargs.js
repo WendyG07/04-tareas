@@ -1,3 +1,9 @@
+/*En este documento yargs tenemos los comandos y sus respectivos parámetros
+ *Primero definimos los parámetros de una menera global, porque todos los comandos
+ *comparten los mismos parámetros y esta es una manera para repetirlos en cada comando.
+ */
+
+/*Definir parámetros*/
 const descripcion = {
     demand: true,
     alias: 'd',
@@ -9,6 +15,7 @@ const completado = {
     alias: 'c',
     desc: "Marca como completada o pendiente la tarea"
 };
+/*Definimos los comandos agregando los parámetros que cada uno necesita*/
 
 const argv = require('yargs')
     .command('crear', 'Crear una tarea', {
@@ -26,7 +33,7 @@ const argv = require('yargs')
     })
     .help()
     .argv;
-
+/*Exportamos argv */
 module.exports = {
     argv
 }
