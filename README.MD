@@ -30,7 +30,7 @@ node app.js listar -c true
 ```
 
 
-Y para las que aún no estan terminadas cambiamos *true* por *false* y si queremos listar todas las listas sin importar su estado ejecutamos:
+Y para las que aún no estan terminadas cambiamos *true* por *false* y si queremos listar todas las tareas sin importar su estado ejecutamos:
 
 
 ```
